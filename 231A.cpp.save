@@ -1,0 +1,17 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+//captain.abn
+int main() {
+    int s;
+    cin >> s;
+    vector<string> results;
+    while(s--){
+        long long y,x;
+        cin >>y >>x;
+        if ( ((y+x)%3==0) && max(x,y)<= 2*min(x,y)){
+            results.push_back("YES");
+        }
+        else results.push_back("NO");
+    }
+    for (string re
